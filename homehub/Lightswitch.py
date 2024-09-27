@@ -1,10 +1,11 @@
 from unit import Unit
-
+from uuid import uuid1
 
 class Lightswitch(Unit):
     
-    def __init__(self, unit_id: int, name: str, status: bool) -> None:
-        super().__init__(unit_id, name, status)
+    def __init__(self, name: str, status = False) -> None:
+        super().__init__(name, status)
+        self.unit_id = uuid1().hex
     
 
 def main():

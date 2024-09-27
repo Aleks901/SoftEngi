@@ -1,17 +1,12 @@
-
+from uuid import uuid1
 # Dette er foreldre klassen til alle enhetsklasser senere
 
 class Unit():
     
-    def __init__(self, unit_id: int, name:str, status: bool) -> None:
-        self.unit_id = unit_id
+    def __init__(self, name:str, status = False) -> None:
+        self.unit_id = uuid1().hex
         self.name = name
         self.status = status
-        
-    
-    # Create unit blir brukt til å produsere units i grensesnittet senere
-    def create_unit():
-        pass
     
     
     def setUnit_id(self, new_id: int) -> None:

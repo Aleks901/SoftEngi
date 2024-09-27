@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/state-diagram
+
+hide empty description
+
+[*] --> VelgEnhet
+VelgEnhet --> VelgEnhet : Velg annen enhet
+VelgEnhet --> EnhetError : Enheten finnes ikke
+EnhetError --> VelgEnhet
+VelgEnhet --> VelgDag : Enheten finnes
+VelgDag --> VelgDag : Velg annen dag
+VelgDag --> SetTimer
+VelgDag ---> VelgEnhet : Velg annen enhet
+SetTimer --> VelgDag
+SetTimer --> SetTemperatur : Hvis varme enhet
+SetTemperatur --> VelgDag
+SetTimer --> [*] : Ferdig
+SetTemperatur --> [*] : Ferdig
+@enduml

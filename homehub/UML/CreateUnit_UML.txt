@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/state-diagram
+
+hide empty description
+
+[*] --> Enhet
+
+Enhet --> VelgType
+VelgType --> Varme
+VelgType --> Lys
+Lys --> SetNavnLys
+Varme --> SetNavnVarme
+SetNavnVarme --> SetTemperatur
+SetNavnLys --> SetLysStyrke
+SetTemperatur --> [*]
+SetLysStyrke --> [*]
+
+@enduml

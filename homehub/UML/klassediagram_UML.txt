@@ -1,0 +1,25 @@
+@startuml
+class Unit {
+    + create_unit()
+    + setUnit_id()
+    + setStatus()
+    + setName()
+    + main()
+        - int unit_id
+    - String name
+    - bool status
+    + __init__()
+}
+class Lightswitch {
+    + main()
+        + __init__()
+}
+Unit <|-- Lightswitch
+
+class Heating {
+    + setTemperature()
+    - temperature
+    __init__()
+}
+Unit <|-- Heating
+@enduml

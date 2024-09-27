@@ -1,12 +1,13 @@
 from unit import Unit
 from heating import Heating
 from lightswitch import Lightswitch
+from main import create_unit
 
 # Her testes de forskjellige metodene fra klassene våre
 
-lysbryter = Unit(1, "Bryter1", True)
-varmeovn = Heating(2, "Varm1", True, 10)
-lightswitch = Lightswitch(3, "lysbryter", False)
+lysbryter = Unit("Bryter1", True)
+varmeovn = Heating("Varm1", True, 10)
+lightswitch = Lightswitch("lysbryter", False)
 
 def test_name():
     lysbryter.setName("Aleks")
@@ -25,3 +26,12 @@ def test_temp():
 
 def test_light():
     assert lightswitch.setStatus() == True
+    
+def test_unit_exists():
+    assert isinstance(lightswitch, Unit) == True
+    
+def test_create_unit():
+    lys_test = create_unit("Lysbryternn", "Lys")
+    assert isinstance(lys_test, Lightswitch) == True
+    assert isinstance(lys_test, Heating) == False
+    
