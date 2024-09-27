@@ -1,4 +1,3 @@
-import pytest
 from unit import Unit
 from heating import Heating
 
