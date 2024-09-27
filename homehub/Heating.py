@@ -1,16 +1,11 @@
-import Unit as unit
+from unit import Unit
 
 
-class Heating(unit):
+class Heating(Unit):
     
     def __init__(self, unit_id, name, status, temperature: float) -> None:
-        super.__init__(self, unit_id, name, status)
+        super().__init__(unit_id, name, status)
         self.temperature = temperature
-        
-        
-
-def main():
-    pass
-
-if __name__ == "__Main__":
-    main()
+    
+    def setTemperature(self, temp):
+        self.temperature = temp

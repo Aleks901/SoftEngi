@@ -1,6 +1,4 @@
 
-
-
 class Unit():
     
     def __init__(self, unit_id: int, name:str, status: bool) -> None:
@@ -24,10 +22,6 @@ class Unit():
     def setName(self, name):
         self.name = name
         
-    
-        
-
-
 
 
 
