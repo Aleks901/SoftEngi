@@ -1,7 +1,7 @@
-from unit import Unit
-from heating import Heating
-from lightswitch import Lightswitch
-from main import create_unit
+from Unit import Unit
+from Heating import Heating
+from Lightswitch import Lightswitch
+from Main import create_unit
 
 # Her testes de forskjellige metodene fra klassene våre
 

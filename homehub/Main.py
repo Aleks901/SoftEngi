@@ -1,6 +1,6 @@
-from unit import Unit
-from heating import Heating
-from lightswitch import Lightswitch
+from Unit import Unit
+from Heating import Heating
+from Lightswitch import Lightswitch
 
 lysbryter = Unit("Bryter1", True)
 varmeovn = Heating("Varm1", True, 10)
