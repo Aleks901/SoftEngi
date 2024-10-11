@@ -1,6 +1,4 @@
-from models.Unit import Unit
-from models.Heating import Heating
-from models.Lightswitch import Lightswitch
+from models import *
 from tkinter import *
 from tkinter import ttk
 

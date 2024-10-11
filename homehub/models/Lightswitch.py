@@ -1,4 +1,4 @@
-from Unit import Unit
+from .Unit import Unit
 from uuid import uuid1
 
 class Lightswitch(Unit):
