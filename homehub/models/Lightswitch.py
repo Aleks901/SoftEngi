@@ -7,9 +7,3 @@ class Lightswitch(Unit):
         super().__init__(name, status)
         self.unit_id = uuid1().hex
     
-
-def main():
-    pass
-
-if __name__ == "__Main__":
-    main()

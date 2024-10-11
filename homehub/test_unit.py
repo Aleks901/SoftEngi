@@ -1,6 +1,4 @@
-from models.Unit import Unit
-from models.Heating import Heating
-from models.Lightswitch import Lightswitch
+from models import *
 from Main import create_unit
 
 # Her testes de forskjellige metodene fra klassene våre

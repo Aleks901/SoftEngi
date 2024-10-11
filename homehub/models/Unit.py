@@ -37,9 +37,3 @@ class Unit():
         """
         self.name = name
         
-
-def main():
-    pass
-
-if __name__ == "__Main__":
-    main()
