@@ -1,6 +1,8 @@
 from Unit import Unit
 from Heating import Heating
 from Lightswitch import Lightswitch
+from tkinter import *
+from tkinter import ttk
 
 lysbryter = Unit("Bryter1", True)
 varmeovn = Heating("Varm1", True, 10)
@@ -17,5 +19,9 @@ def create_unit(name: str, unit_type):
     elif unit_type == "Lys":
         new_unit = Lightswitch(name)
         return new_unit
+root = Tk()
+root.title("Homehub")
+root.geometry("800x600")
+root.mainloop()
         
     
