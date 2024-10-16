@@ -8,9 +8,9 @@ root = tk.Tk()
 root.title("Home Hub")
 root.geometry("800x600")
 root.anchor("center")
-background_image = tk.PhotoImage(file="blueprint.png")
+"""background_image = tk.PhotoImage(file="blueprint.png")
 label = tk.Label(root, image=background_image)
-label.place(relwidth=1, relheight=1)
+label.place(relwidth=1, relheight=1)"""
 background_frame = tk.Frame(root, bg="black", bd=0)
 background_frame.place(relx=0.5,rely=0.5, anchor="center")
 

@@ -2,6 +2,7 @@ from models import *
 from Pictures import *
 import tkinter as tk
 from tkinter import ttk
+from tkinter import Menu
 
 lysbryter = Unit("Bryter1", True)
 varmeovn = Heating("Varm1", True, 10)
@@ -20,18 +21,30 @@ def create_unit(name: str, unit_type):
     elif unit_type == "Lys":
         new_unit = Lightswitch(name)
         return new_unit
-
+    
+def new_window():
+    window = tk.Tk()
+    window.geometry("800x600")
+    window.mainloop()
+    
+# Hoved vindu
 root = tk.Tk()
 root.title("Homehub")
 root.geometry("800x600")
+
 # File meny
-file_button = ttk.Button(root, text="File")
-file_button.place(x=0, y=0)
-edit_button = ttk.Button(root, text="Edit")
-edit_button.place(x=75, y=0)
-about_button = ttk.Button(root, text="About")
-about_button.place(x=150, y=0)
+menubar = Menu(root)
+root.config(menu=menubar)
+file_menu = Menu(menubar, tearoff=0)
+file_menu.add_command(label='New controller', command=new_window)
+file_menu.add_command(label='Open controller')
+file_menu.add_command(label='Exit', command=root.destroy,)
+about_menu = Menu(menubar, tearoff=0)
+about_menu.add_command(label='ReadMe')
+menubar.add_cascade(label="File", menu=file_menu)
+menubar.add_cascade(label="About", menu=about_menu)
 # /File meny
 root.mainloop()
+# /Hoved vindu
         
     
