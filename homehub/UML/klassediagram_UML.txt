@@ -4,14 +4,12 @@ class Unit {
     + setUnit_id()
     + setStatus()
     + setName()
-    + main()
         - int unit_id
     - String name
     - bool status
     + __init__()
 }
 class Lightswitch {
-    + main()
         + __init__()
 }
 Unit <|-- Lightswitch
@@ -22,4 +20,22 @@ class Heating {
     __init__()
 }
 Unit <|-- Heating
+
+class DraggableUnit {
+    start_drag()
+    do_drag()
+    create_draggable_button()
+        parent
+    start_x
+    start_y
+    __init__()
+}
+
+class Window {
+    create_unit()
+    file_menu()
+    root_window()
+    logged_in_window()
+        __init__()
+}
 @enduml

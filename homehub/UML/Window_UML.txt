@@ -1,0 +1,9 @@
+@startuml
+class Window {
+    create_unit()
+    file_menu()
+    root_window()
+    logged_in_window()
+        __init__()
+}
+@enduml

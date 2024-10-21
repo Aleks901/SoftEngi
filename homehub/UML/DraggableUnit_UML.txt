@@ -1,0 +1,11 @@
+@startuml
+class DraggableUnit {
+    start_drag()
+    do_drag()
+    create_draggable_button()
+        parent
+    start_x
+    start_y
+    __init__()
+}
+@enduml
