@@ -6,6 +6,6 @@ class twoFactAuth():
   
   def magic(password: bool, auth: bool):
     if password and auth == True:
-      print("Woah! It worked!")
+      print("Oi! Det funka!")
     else:
-      print("Something's wrong!")
+      print("Noe gikk galt!")
