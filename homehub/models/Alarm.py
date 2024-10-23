@@ -1,4 +1,4 @@
-from Unit import Unit
+from models.Unit import Unit
 from uuid import uuid1
 import datetime
 import time
@@ -23,5 +23,5 @@ class Alarm(Unit):
                 winsound.PlaySound("sound.wav", winsound.SND_ASYNC)
                 break
 
-vekkeklokke = Alarm("vekkeklokke", True)
-vekkeklokke.run(11, 49, "50")
+"""vekkeklokke = Alarm("vekkeklokke", True)
+vekkeklokke.run(11, 49, "50")"""

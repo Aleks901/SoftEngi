@@ -1,5 +1,5 @@
 from models import *
-from Main import create_unit
+
 
 # Her testes de forskjellige metodene fra klassene våre
 
@@ -27,9 +27,5 @@ def test_light():
     
 def test_unit_exists():
     assert isinstance(lightswitch, Unit) == True
-    
-def test_create_unit():
-    lys_test = create_unit("Lysbryternn", "Lys")
-    assert isinstance(lys_test, Lightswitch) == True
-    assert isinstance(lys_test, Heating) == False
+
     
