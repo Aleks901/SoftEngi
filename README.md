@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # SoftEngi
 <br> 
 Her i develop vil dere finne TkDemo som var vår prototype(av prototypen). 
@@ -8,3 +9,6 @@ Dere vil også kunne finne HomeHub som er koden til den endelige prototypen elle
 =======
 # SoftEngi
 >>>>>>> 2Faktor_auth
+=======
+# SoftEngi
+>>>>>>> Website
