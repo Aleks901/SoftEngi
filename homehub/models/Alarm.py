@@ -19,9 +19,8 @@ class Alarm(Unit):
             print(current_time)
             print(set_alarm)
             if current_time == set_alarm:
-                print("Time to Wake up")
+                print("Alarm ran out")
                 winsound.PlaySound("sound.wav", winsound.SND_ASYNC)
                 break
+            return self.status == True
 
-"""vekkeklokke = Alarm("vekkeklokke", True)
-vekkeklokke.run(11, 49, "50")"""

@@ -6,6 +6,7 @@ from models import *
 lysbryter = Unit("Bryter1", True)
 varmeovn = Heating("Varm1", True, 10)
 lightswitch = Lightswitch("lysbryter", False)
+alarm = Alarm("Test Alarm")
 
 def test_name():
     lysbryter.setName("Aleks")
@@ -28,4 +29,8 @@ def test_light():
 def test_unit_exists():
     assert isinstance(lightswitch, Unit) == True
 
-    
+def test_alarm():
+    """Sjekker egentlig bare om alarm loopen runner,
+    breaker og så returnerer status True som vil si at enheten
+    er skrudd på"""
+    assert alarm.run(12, 45, 50) == True
