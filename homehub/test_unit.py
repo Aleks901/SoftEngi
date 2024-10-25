@@ -8,6 +8,7 @@ varmeovn = Heating("Varm1", True, 10)
 lightswitch = Lightswitch("lysbryter", False)
 alarm = Alarm("Test Alarm")
 
+
 def test_name():
     lysbryter.setName("Aleks")
     assert lysbryter.name == "Aleks"
@@ -43,3 +44,4 @@ def test_alarm():
     dermed er den kommentert ut når den ikke brukes."""
     
     # assert alarm.run(12, 45, 50) == True
+    
