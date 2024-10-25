@@ -29,8 +29,17 @@ def test_light():
 def test_unit_exists():
     assert isinstance(lightswitch, Unit) == True
 
+def test_unit_wrong_unit():
+    """
+    Sjekker om enheten oppdages som feil type
+    """
+    assert isinstance(lightswitch, Heating) == False
+
 def test_alarm():
     """Sjekker egentlig bare om alarm loopen runner,
     breaker og så returnerer status True som vil si at enheten
-    er skrudd på"""
-    assert alarm.run(12, 45, 50) == True
+    er skrudd på.
+    Ettersom testen må baseres på tid så må den justeres for hver test
+    dermed er den kommentert ut når den ikke brukes."""
+    
+    # assert alarm.run(12, 45, 50) == True
