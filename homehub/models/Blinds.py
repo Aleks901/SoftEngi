@@ -8,21 +8,6 @@ class Blinds(Unit):
         self.name = name
         self.status = status
         
-    def get_name(self):
-        """Henter navnet på enheten
-
-        Returns:
-            _type_: Navnet på enheten
-        """
-        return self.name
-    
-    def set_name(self, name):
-        """Setter navnet på enheten
-
-        Args:
-            name (_type_): Navnet på enheten
-        """
-        self.name == name
         
     def open_blinds(self):
         """Åpner gardinen

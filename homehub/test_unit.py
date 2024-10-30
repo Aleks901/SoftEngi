@@ -7,6 +7,7 @@ lysbryter = Unit("Bryter1", True)
 varmeovn = Heating("Varm1", True, 10)
 lightswitch = Lightswitch("lysbryter", False)
 alarm = Alarm("Test Alarm")
+blinds = Blinds("Test_blinds")
 
 
 def test_name():
@@ -35,6 +36,13 @@ def test_unit_wrong_unit():
     Sjekker om enheten oppdages som feil type
     """
     assert isinstance(lightswitch, Heating) == False
+    
+def test_blinds_super_setter():
+    """
+    Tester om setter fra over klasse funker
+    """
+    blinds.setName("Test_correct")
+    assert blinds.getName() == "Test_correct"
 
 def test_alarm():
     """Sjekker egentlig bare om alarm loopen runner,
