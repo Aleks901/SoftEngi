@@ -37,3 +37,6 @@ class Unit():
         """
         self.name = name
         
+    def getName(self) -> str:
+        return self.name
+        
