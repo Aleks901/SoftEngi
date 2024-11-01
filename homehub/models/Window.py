@@ -4,9 +4,10 @@ from models.DraggableUnit import DraggableUnit
 import tkinter as tk
 from tkinter import ttk
 from tkinter import Menu
+from tkinter import *
+
 
 class Window():
-    
     
     #TODO Vurder nødvendigheten av funksjonen
     def create_unit(name: str, unit_type):
@@ -33,8 +34,9 @@ class Window():
 
         menubar.add_cascade(label="File", menu=file_menu)
         menubar.add_cascade(label="About", menu=about_menu)
-        # /File meny
-        
+        # /File meny  
+    
+    
     def root_window():
         root = tk.Tk()
         root.title("Homehub")
@@ -54,25 +56,22 @@ class Window():
 
         password_label = ttk.Label(signin, text="Password:")
         password_label.pack()
-
+        
+        heating_image = PhotoImage(file="homehub\models\heating_icon.png")
+        btn = DraggableUnit(root, heating_image)
+        btn.place(x=300, y=300)
+        
         password_entry = ttk.Entry(signin, textvariable=password, show="*")
         password_entry.pack()
-
-
-
+        
         login_button = ttk.Button(signin, text="Login", command=Window.logged_in_window)
         login_button.pack(pady=10)
 
         root.mainloop()
-
-        # Logget inn vindu   
+    
     def logged_in_window():
-        window = tk.Tk()
-        window.geometry("800x600")
-        loggedin_text = ttk.Label(window, text="Logged in as: TestUser")
+        root = tk.Tk()
+        root.geometry("800x600")
+        loggedin_text = ttk.Label(root, text="Logged in as: TestUser")
         loggedin_text.place(x=0, y=0)
-        DraggableUnit.create_draggable_button(window, "Test Unit", 100, 100)
-        window.mainloop()
-        # / Logget inn vindu
-        
-        # /Hoved vindu
+        root.mainloop()  
