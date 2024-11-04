@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb634029-3daf-4e95-9271-8ddc739b48cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/homehub/models/Doorbell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerBackend/test_backend_text.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerBackend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ServerBackend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerBackend/models/read.py" beforeDir="false" afterPath="$PROJECT_DIR$/ServerBackend/models/read.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerBackend/test_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/ServerBackend/test_server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +42,50 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "security__doorbell"
+    "git-widget-placeholder": "Backend"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\simen\OneDrive\Skrivebord\git\SoftEngi\ServerBackend" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Python tests for test_server.test_read_from_server" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SoftEngi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ServerBackend" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_server.test_read_from_server&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_server.test_write_to_server" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SoftEngi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ServerBackend" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_server.test_write_to_server&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_server.test_write_to_server" />
+        <item itemvalue="Python tests.Python tests for test_server.test_read_from_server" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
