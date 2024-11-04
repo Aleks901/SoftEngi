@@ -12,10 +12,10 @@ class Blinds(Unit):
     def open_blinds(self):
         """Åpner gardinen
         """
-        self.status == True
+        self.status = True
     
     def close_blinds(self):
         """Stenger gardinen
         """
-        self.status == False
+        self.status = False
     

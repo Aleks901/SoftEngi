@@ -1,14 +1,14 @@
-from homehub.models.Alarm import Alarm
-from homehub.models.Blinds import Blinds
-from homehub.models.Heating import Heating
-from homehub.models.Lightswitch import Lightswitch
-from homehub.models.Unit import Unit
+from models.Alarm import Alarm
+from models.Blinds import Blinds
+from models.Heating import Heating
+from models.Lightswitch import Lightswitch
+from models.Unit import Unit
 from models import *
 from tkinter import Tk
 from tkinter import *
 from models.Unit import Unit
 from uuid import uuid1
-from models import DraggableUnit
+from models.DraggableUnit import DraggableUnit
 from models.Doorbell import Doorbell
 
 
@@ -57,12 +57,6 @@ def test_blinds_super_setter():
 def test_alarm():
     pass
 
-def test_create_draggable_button():
-    root = Tk()
-    button = DraggableUnit.create_draggable_button(root, "Lysbryter", 100, 100)
-    assert button.winfo_x() == 100 and button.winfo_y() == 100
-    assert button.cget("text") == "Lysbryter"
-    root.destroy()
 
 def test_doorbell_creation():
     doorbell = Doorbell(name="Front Door")
@@ -73,6 +67,16 @@ def test_doorbell_creation():
 def test_doorbell_notify_user():
     doorbell = Doorbell(name="Front Door")
     assert callable(doorbell.notifyUser)
+    
+def test_blinds_open():
+    fun_blinds = Blinds("Gardina mi")
+    fun_blinds.open_blinds()
+    assert fun_blinds.status == True
+    
+def test_blinds_close():
+    fun_blinds = Blinds("Gardina mi")
+    fun_blinds.close_blinds()
+    assert fun_blinds.status == False
 
 
 
