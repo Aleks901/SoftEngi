@@ -1,4 +1,6 @@
 from models import *
-from Pictures import *
+from models.Window import Window 
 
-Window.root_window()
+if __name__ == "__main__":
+    app = Window()
+    app.run()
