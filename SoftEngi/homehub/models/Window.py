@@ -16,9 +16,11 @@ class Window:
         heating_image_path = os.path.join("SoftEngi", "homehub", "pictures", "heating_icon.png")
         chilled_image_path = os.path.join("SoftEngi", "homehub", "pictures", "chilled_icon.png")
         sound_image_path = os.path.join("SoftEngi", "homehub", "pictures", "Sound_icon.png")
+        blueprint_image_path = os.path.join("SoftEngi", "homehub", "pictures", "blueprint.png")
         self.heating_image = PhotoImage(file=heating_image_path)
         self.chilled_image = PhotoImage(file=chilled_image_path)
         self.sound_image = PhotoImage(file=sound_image_path)
+        self.background_image = PhotoImage(file=blueprint_image_path)
         
         self.init_frames()
         
@@ -55,12 +57,16 @@ class Window:
         self.login_frame.pack(padx=10, pady=200)
 
     def create_logged_in_frame(self):
-        btn1 = DraggableUnit(self.logged_in_frame, image=self.heating_image)
-        btn1.pack()
-        btn2 = DraggableUnit(self.logged_in_frame, image=self.chilled_image)
+        background = Canvas(self.logged_in_frame, width=800, height=600)
+        background.create_image((400, 300), image=self.background_image)
+        btn1 = DraggableUnit(self.logged_in_frame, image=self.heating_image, unit_type="Heating")
+        btn1.place(x= 210, y=100)
+        btn2 = DraggableUnit(self.logged_in_frame, image=self.chilled_image, unit_type="Chill")
         btn2.pack()
-        btn3 = DraggableUnit(self.logged_in_frame, self.sound_image)
+        btn3 = DraggableUnit(self.logged_in_frame, self.sound_image, unit_type="Doorbell")
         btn3.pack()
+        background.place(x=0, y=0)
+        
         loggedin_text = ttk.Label(self.logged_in_frame, text="Logged in as: TestUser")
         loggedin_text.place(x=0, y=0)
 
