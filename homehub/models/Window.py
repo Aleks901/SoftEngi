@@ -59,12 +59,15 @@ class Window:
     def create_logged_in_frame(self):
         background = Canvas(self.logged_in_frame, width=800, height=600)
         background.create_image((400, 300), image=self.background_image)
+        #Varmeovn soverom
         btn1 = DraggableUnit(self.logged_in_frame, image=self.heating_image, unit_type="Heating")
-        btn1.place(x= 210, y=100)
+        btn1.place(x= 220, y=100)
+        #Smartkjøleskap
         btn2 = DraggableUnit(self.logged_in_frame, image=self.chilled_image, unit_type="Chill")
-        btn2.pack()
+        btn2.place(x=700, y=200)
+        #Ringeklokke, inngangsparti
         btn3 = DraggableUnit(self.logged_in_frame, self.sound_image, unit_type="Doorbell")
-        btn3.pack()
+        btn3.place(x=420, y=100)
         background.place(x=0, y=0)
         
         loggedin_text = ttk.Label(self.logged_in_frame, text="Logged in as: TestUser")
