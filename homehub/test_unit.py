@@ -3,12 +3,10 @@ from models.Blinds import Blinds
 from models.Heating import Heating
 from models.Lightswitch import Lightswitch
 from models.Unit import Unit
+from models.Bluetooth import BluetoothDevice
 from models import *
-from tkinter import Tk
 from tkinter import *
 from models.Unit import Unit
-from uuid import uuid1
-from models.DraggableUnit import DraggableUnit
 from models.Doorbell import Doorbell
 
 
@@ -78,6 +76,96 @@ def test_blinds_close():
     fun_blinds.close_blinds()
     assert fun_blinds.status == False
 
+def test_pair_device():
+    device = BluetoothDevice(name="TestDevice")
+    result = device.pair("00:11:22:33:44:55")
+    assert result == "TestDevice paired with device 00:11:22:33:44:55."
+    assert device.is_paired is True
+
+def test_pair_device_already_paired():
+    device = BluetoothDevice(name="TestDevice")
+    device.pair("00:11:22:33:44:55")
+    result = device.pair("00:11:22:33:44:55")
+    assert result == "TestDevice is already paired with 00:11:22:33:44:55."
+
+def test_unpair_device():
+    device = BluetoothDevice(name="TestDevice")
+    device.pair("00:11:22:33:44:55")
+    result = device.unpair()
+    assert result == "TestDevice unpaired from device 00:11:22:33:44:55."
+    assert device.is_paired is False
+
+def test_unpair_device_not_paired():
+    device = BluetoothDevice(name="TestDevice")
+    result = device.unpair()
+    assert result == "TestDevice is not paired with any device."
+
+def test_connect_device():
+    device = BluetoothDevice(name="TestDevice")
+    device.pair("00:11:22:33:44:55")
+    result = device.connect()
+    assert result == "TestDevice connected to 00:11:22:33:44:55."
+    assert device.is_connected is True
+
+def test_connect_device_not_paired():
+    device = BluetoothDevice(name="TestDevice")
+    result = device.connect()
+    assert result == "TestDevice is not paired with any device."
+
+def test_connect_device_already_connected():
+    device = BluetoothDevice(name="TestDevice")
+    device.pair("00:11:22:33:44:55")
+    device.connect()
+    result = device.connect()
+    assert result == "TestDevice is already connected to 00:11:22:33:44:55."
+
+def test_disconnect_device():
+    device = BluetoothDevice(name="TestDevice")
+    device.pair("00:11:22:33:44:55")
+    device.connect()
+    result = device.disconnect()
+    assert result == "TestDevice disconnected from 00:11:22:33:44:55."
+    assert device.is_connected is False
+
+def test_disconnect_device_not_connected():
+    device = BluetoothDevice(name="TestDevice")
+    result = device.disconnect()
+    assert result == "TestDevice is not connected to any device."
+
+def test_send_data_connected():
+    device = BluetoothDevice(name="TestDevice")
+    device.pair("00:11:22:33:44:55")
+    device.connect()
+    result = device.send_data("Hello World")
+    assert result == "Sending data to 00:11:22:33:44:55: Hello World"
+
+def test_send_data_not_connected():
+    device = BluetoothDevice(name="TestDevice")
+    result = device.send_data("Hello World")
+    assert result == "TestDevice is not connected. Cannot send data."
+
+def test_receive_data_connected():
+    device = BluetoothDevice(name="TestDevice")
+    device.pair("00:11:22:33:44:55")
+    device.connect()
+    result = device.receive_data()
+    assert result == "Data received from 00:11:22:33:44:55: Sample received data"
+
+def test_receive_data_not_connected():
+    device = BluetoothDevice(name="TestDevice")
+    result = device.receive_data()
+    assert result == "TestDevice is not connected. Cannot receive data."
+
+def test_get_battery_level():
+    device = BluetoothDevice(name="TestDevice")
+    result = device.get_battery_level()
+    assert result == "TestDevice battery level: 100%"
+
+def test_rename_device():
+    device = BluetoothDevice(name="TestDevice")
+    result = device.rename_device("NewDevice")
+    assert result == "Device renamed from 'TestDevice' to 'NewDevice'"
+    assert device.name == "NewDevice"
 
 
 
