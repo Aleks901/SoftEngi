@@ -1,0 +1,1 @@
+TKdemo var demoen våres for å teste biblioteket TK det er ikke den endelige protypen. Kall det heller protype av prototypen.
