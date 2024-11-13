@@ -6,18 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="fb634029-3daf-4e95-9271-8ddc739b48cf" name="Changes" comment="">
 <<<<<<< HEAD
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/SoftEngi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SoftEngi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homehub/test_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/homehub/test_unit.py" afterDir="false" />
 =======
+=======
+>>>>>>> Stashed changes
       <change afterPath="$PROJECT_DIR$/ServerBackend/test_backend_text.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerBackend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ServerBackend/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerBackend/models/read.py" beforeDir="false" afterPath="$PROJECT_DIR$/ServerBackend/models/read.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerBackend/test_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/ServerBackend/test_server.py" afterDir="false" />
+<<<<<<< Updated upstream
 >>>>>>> Backend
+=======
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/SoftEngi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SoftEngi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homehub/test_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/homehub/test_unit.py" afterDir="false" />
+>>>>>>> origin/Develop
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
 <<<<<<< HEAD
+<<<<<<< Updated upstream
     "git-widget-placeholder": "Develop",
     "last_opened_file_path": "C:/Users/Hoida/OneDrive/Dokumenter/SoftEngi"
   }
@@ -62,6 +75,8 @@
       </set>
     </attachedChunks>
 =======
+=======
+>>>>>>> Stashed changes
     "git-widget-placeholder": "Backend"
   }
 }]]></component>
@@ -105,7 +120,22 @@
         <item itemvalue="Python tests.Python tests for test_server.test_read_from_server" />
       </list>
     </recent_temporary>
+<<<<<<< Updated upstream
 >>>>>>> Backend
+=======
+=======
+    "git-widget-placeholder": "Develop",
+    "last_opened_file_path": "C:/Users/Hoida/OneDrive/Dokumenter/SoftEngi"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+      </set>
+    </attachedChunks>
+>>>>>>> origin/Develop
+>>>>>>> Stashed changes
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

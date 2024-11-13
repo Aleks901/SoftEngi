@@ -22,5 +22,6 @@ class Alarm(Unit):
                 print("Alarm ran out")
                 winsound.PlaySound("sound.wav", winsound.SND_ASYNC)
                 break
-            return self.status == True
+        self.setStatus()
+        return self.status
 
