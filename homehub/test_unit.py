@@ -4,11 +4,8 @@ from models.Heating import Heating
 from models.Lightswitch import Lightswitch
 from models.Unit import Unit
 from models import *
-from tkinter import Tk
 from tkinter import *
 from models.Unit import Unit
-from uuid import uuid1
-from models.DraggableUnit import DraggableUnit
 from models.Doorbell import Doorbell
 
 
