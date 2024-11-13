@@ -1,7 +1,7 @@
 from models.Unit import Unit
 from uuid import uuid1
 
-from homehub.models import Alarm
+from models.Alarm import Alarm
 
 
 class Lightswitch(Unit):

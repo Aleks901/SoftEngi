@@ -1,6 +1,9 @@
 
 
+
 class BluetoothDevice:
+    
+    
     def __init__(self, name="Unknown Device", mac_address=None):
         self.name = name
         self.mac_address = mac_address
