@@ -19,26 +19,26 @@ alarm = Alarm("Test Alarm")
 blinds = Blinds("Test_blinds")
 
 
-def test_name():
+def test_set_name():
     lysbryter.setName("Aleks")
     assert lysbryter.name == "Aleks"
 
 
-def test_status():
+def test_setStatus_lysbryter_False():
     assert lysbryter.setStatus() == False
 
 
-def test_id():
+def test_set_unit_id():
     lysbryter.setUnit_id(4)
     assert lysbryter.unit_id == 4
 
 
-def test_temp():
+def test_heater_can_set_temperature():
     varmeovn.setTemperature(20.5)
     assert varmeovn.temperature == 20.5
 
 
-def test_light():
+def test_setStatus_lightswitch_True():
     assert lightswitch.setStatus() == True
 
 
