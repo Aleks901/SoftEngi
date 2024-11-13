@@ -19,6 +19,7 @@ alarm = Alarm("Test Alarm")
 blinds = Blinds("Test_blinds")
 
 
+
 def test_name():
     lysbryter.setName("Aleks")
     assert lysbryter.name == "Aleks"
