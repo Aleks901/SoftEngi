@@ -18,22 +18,42 @@ blinds = Blinds("Test_blinds")
 
 
 def test_set_name():
+    """
+    Sjekker om name setter faktisk setter gitt navn
+    """
     lysbryter.setName("Aleks")
     assert lysbryter.name == "Aleks"
 
 
 def test_setStatus_lysbryter_False():
+    """
+    Sjekker om du kan skru av og på lysbryter med funksjonen
+    """
     assert lysbryter.setStatus() == False
 
 
 def test_set_unit_id():
+    """
+    Sjekker om id setter faktisk setter gitt id
+    """
     lysbryter.setUnit_id(4)
     assert lysbryter.unit_id == 4
 
 
 def test_heater_can_set_temperature():
+    """
+    Sjekker om temperatur setter faktisk setter gitt temperatur
+    """
     varmeovn.setTemperature(20.5)
     assert varmeovn.temperature == 20.5
+    
+def test_heater_wrong_temperature():
+    """
+    Tester feil situasjon hvor feil temperatur blir returnert
+    """
+    varmeovn.setTemperature(20.5)
+    assert varmeovn.getTemperature != 10
+    
 
 
 def test_setStatus_lightswitch_True():
