@@ -1,4 +1,3 @@
-from homehub.models.Lightswitch import Lightswitch
 from models import *
 from models.Window import Window 
 

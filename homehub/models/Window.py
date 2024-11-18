@@ -17,9 +17,11 @@ class Window:
         chilled_image_path = os.path.join("SoftEngi", "homehub", "pictures", "chilled_icon.png")
         sound_image_path = os.path.join("SoftEngi", "homehub", "pictures", "Sound_icon.png")
         blueprint_image_path = os.path.join("SoftEngi", "homehub", "pictures", "blueprint.png")
+        light_image_path = os.path.join("SoftEngi", "homehub", "pictures", "light_icon.png")
         self.heating_image = PhotoImage(file=heating_image_path)
         self.chilled_image = PhotoImage(file=chilled_image_path)
         self.sound_image = PhotoImage(file=sound_image_path)
+        self.light_image = PhotoImage(file=light_image_path)
         self.background_image = PhotoImage(file=blueprint_image_path)
         
         self.init_frames()
@@ -69,6 +71,9 @@ class Window:
         btn3 = DraggableUnit(self.logged_in_frame, self.sound_image, unit_type="Doorbell")
         btn3.place(x=420, y=100)
         background.place(x=0, y=0)
+        #Lys
+        btn4 = DraggableUnit(self.logged_in_frame, self.light_image, unit_type="Lightswitch")
+        btn4.place(x=300, y=300)
         
         loggedin_text = ttk.Label(self.logged_in_frame, text="Logged in as: TestUser")
         loggedin_text.place(x=0, y=0)
